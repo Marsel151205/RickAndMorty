@@ -27,7 +27,8 @@ class LocationAdapter(private val list: ArrayList<LocationModel>) :
     class LocationViewHolder(private val binding: ItemLocationBinding) : ViewHolder(binding.root) {
         fun onBind(model: LocationModel) {
             binding.tvNameLocation.text = model.name
-            binding.tvUrl.text = model.url
+            binding.tvType.text = model.type
+            binding.tvDimension.text = model.dimension
         }
     }
 

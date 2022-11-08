@@ -40,13 +40,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_indicator"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_margin="5dp"
-                    app:cardBackgroundColor="@android:color/holo_red_light"
-                    app:cardCornerRadius="160dp" />
+                <ImageView
+                    android:id="@+id/iv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:src="@drawable/ic_status_unknown" />
 
                 <TextView
                     android:id="@+id/tv_status"
@@ -87,7 +86,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tv_type"
+                    android:id="@+id/tv_last_location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Testicle Monster Dimension"

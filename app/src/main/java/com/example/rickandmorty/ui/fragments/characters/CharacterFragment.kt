@@ -15,7 +15,6 @@ import com.example.rickandmorty.ui.adapters.CharacterAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
-
 @AndroidEntryPoint
 class CharacterFragment :
     BaseFragment<FragmentCharacterBinding, CharacterViewModel>(R.layout.fragment_character) {
@@ -38,7 +37,7 @@ class CharacterFragment :
         binding.rvCharacter.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 super.onScrollStateChanged(recyclerView, newState)
-                if (!recyclerView.canScrollVertically(1)) {
+                    if (!recyclerView.canScrollVertically(1)) {
                     Toast.makeText(requireActivity(), "Last", Toast.LENGTH_LONG).show()
                     ++count
                     subscribeToCharacter()

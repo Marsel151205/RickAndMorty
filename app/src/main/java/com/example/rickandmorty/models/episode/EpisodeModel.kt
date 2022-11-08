@@ -11,9 +11,5 @@ data class EpisodeModel(
     @SerializedName("air_date")
     val airDate: String,
     @SerializedName("episode")
-    val episode: String,
-    @SerializedName("url")
-    val url: String,
-    @SerializedName("created")
-    val created: String
+    val episode: String
 ):IBaseDiffModel<Int>

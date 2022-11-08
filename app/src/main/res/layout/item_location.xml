@@ -13,23 +13,73 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_name_location"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Earth"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_url"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Location Name:"
+                android:textColor="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/tv_name_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Earth"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="fgjlksfdgj;sdfjgks"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Type:"
+                android:textColor="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Planet"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Dimension in which the location is located:"
+                android:textColor="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/tv_dimension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="unknown"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
 
     </LinearLayout>
 

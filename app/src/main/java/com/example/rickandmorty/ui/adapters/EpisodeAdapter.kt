@@ -29,7 +29,6 @@ class EpisodeAdapter(private val list: ArrayList<EpisodeModel>) :
             binding.tvNameEpisode.text = model.name
             binding.tvEpisode.text = model.episode
             binding.tvAirDate.text = model.airDate
-            binding.tvCreated.text = model.created
         }
     }
 

@@ -1,6 +1,9 @@
 package com.example.rickandmorty.models.character
 
 import com.example.rickandmorty.base.IBaseDiffModel
+import com.example.rickandmorty.models.Origin
+import com.example.rickandmorty.models.episode.EpisodeModel
+import com.example.rickandmorty.models.location.LocationModel
 import com.google.gson.annotations.SerializedName
 
 data class CharacterModel(
@@ -18,5 +21,8 @@ data class CharacterModel(
     val gender: String,
     @SerializedName("image")
     val image: String,
-
+    @SerializedName("origin")
+    val origin: Origin,
+    @SerializedName("location")
+    val location: LocationModel
 ) : IBaseDiffModel<Int>
